@@ -16,4 +16,3 @@ def clean_str(text):
     text = re.sub('[-=+,#/\?:^$.@*\"※~&%ㆍ!』\\‘|\(\)\[\]\<\>`\'…》]','', string=text)
     text = re.sub('\n', '.', string=text)
     return text 
-
