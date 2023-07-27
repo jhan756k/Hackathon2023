@@ -8,7 +8,7 @@ baseUrl = r"https://sanjaecase.comwel.or.kr/service/dataView?id="
 nameUrl = r"https://sanjaecase.comwel.or.kr/service/dataListReverse?gubun2=%EC%9E%91%EC%97%85%EC%8B%9C%EA%B0%84%EC%A4%91%EC%82%AC%EA%B3%A0&gubun=&pageUnit=200&pageIndex="
 
 driver = webdriver.Chrome()
-wb = load_workbook(filename = "크롤링\판례.xlsx")
+wb = load_workbook(filename = "판례.xlsx")
 ws = wb.active
 
 for i in range(1):
@@ -25,16 +25,10 @@ for i in range(1):
         casenum +=driver.find_element(By.XPATH, f"/html/body/div/div[2]/div[2]/div/div[3]/div[2]/div[1]/table/tbody/tr[{j+1}]/td[3]/a").text.split("\n")[0]
         casename = driver.find_element(By.XPATH, f"/html/body/div/div[2]/div[2]/div/div[3]/div[2]/div[1]/table/tbody/tr[{j+1}]/td[4]").text
         
-        ws.cell(row=num, column=1).value = num
-        ws.cell(row=num, column=2).value = casetype
-        ws.cell(row=num, column=3).value = casenum
-        ws.cell(row=num, column=4).value = casename
+        ws.cell(row=num+1, column=1).value = num
+        ws.cell(row=num+1, column=2).value = casetype
+        ws.cell(row=num+1, column=3).value = casenum
+        ws.cell(row=num+1, column=4).value = casename
 
 wb.save("result.xlsx")
 driver.quit()
-
-'''
-/html/body/div/div[2]/div[2]/div/div[3]/div[2]/div[1]/table/tbody/tr[1]/td[4]
-/html/body/div/div[2]/div[2]/div/div[3]/div[2]/div[1]/table/tbody/tr[2]/td[4]
-
-'''
