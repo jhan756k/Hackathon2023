@@ -21,3 +21,6 @@ WebDriverWait(driver, 30).until(
 
 print(driver.find_element(By.XPATH, "/html/body/div/div[2]/div[2]/div[2]").text)
 driver.quit()
+
+import win32api
+win32api.MessageBox(0, 'hello', 'title', 0x00001000)
