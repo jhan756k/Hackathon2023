@@ -6,8 +6,8 @@ f = open(r"C:\Users\Jooney Han\Desktop\해커톤\NLP\data.jsonl", "w", encoding=
 wb = load_workbook(filename=r"C:\Users\Jooney Han\Desktop\해커톤\크롤링\result.xlsx")
 ws = wb.active
 
-for i in range(9062): # 9062 - 판결있는거만
-    print(i+2)
+for i in range(9061): # 9061 - 판결있는거만
+    print(f"{i+2}번째 판결")
     celldata = ws.cell(row=i+2, column=9).value
     if not celldata:
         continue
@@ -29,3 +29,5 @@ for i in range(9062): # 9062 - 판결있는거만
     f.write(f"{{\"prompt\": \"{prompt}\", \"completion\": \"{completion}\"}}\n")
 
 f.close()
+
+# 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
