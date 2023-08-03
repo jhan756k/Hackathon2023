@@ -1,0 +1,169 @@
+.bannerimg {
+  width: 100%;
+  height: 50%;
+  filter: brightness(40%);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.bannertext {
+  position: absolute;
+  top: 45%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+.bannertextmes {
+  position: absolute;
+  top: 53%;
+  left: 34%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.bannerselect {
+  position: absolute;
+  top: 78.5%;
+  left: 49%;
+  width: 1000px;
+  height: 80px;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  background-color: white;
+  border-radius: 13px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.classi {
+  font-weight: bolder;
+  font-size: 22px;
+  padding-top: 27px;
+}
+
+.classissel {
+  font-size: 20px;
+  padding-top: 27px;
+}
+
+.divider {
+  border-left: 2px solid gray;
+  height: 35px;
+  margin-top: 23px;
+}
+
+.dropdown {
+  /* width: 0;
+  height: 0;
+  margin-top: 35px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid gray; */
+  border: none;
+  background-color: white;
+}
+
+.casediv {
+  margin-left: 170px;
+  margin-right: 170px;
+  margin-top: 100px;
+
+  /* 노무법인 */
+  margin-bottom: 500px;
+}
+
+.casetitles {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.aihelp {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.aiinput {
+  width: 480px;
+  height: 480px;
+  border: 18px solid #f4f4f4;
+  margin-left: 40px;
+  font-size: 20px;
+  outline: 1px solid lightgray;
+}
+
+.aioutput {
+  width: 480px;
+  height: 480px;
+  border: 18px solid #fcfcfc;
+  margin-right: 40px;
+  background-color: #fcfcfc;
+  font-size: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.outputtitle {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.outputanswer {
+  font-size: 15px;
+  font-weight: bolder;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.outputbuttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 360px;
+}
+
+.consultbutton {
+  width: 200px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  background: #9e1c1c;
+  color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.consultbutton:hover {
+  cursor: pointer;
+}
+
+.askcommunity {
+  width: 200px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  background: white;
+  color: black;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.askcommunity:hover {
+  cursor: pointer;
+}
+
+.casecards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
