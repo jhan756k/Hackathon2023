@@ -1,0 +1,46 @@
+.hospitalmain {
+  background-color: #e2e4e5;
+  border-bottom: 1px solid gray;
+}
+.hostems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hostemimg {
+  width: 10%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.hostemtitle {
+  color: black;
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 40px;
+}
+
+.hosteminp {
+  border-radius: 8px;
+  border: 1px solid #ababab;
+  width: 600px;
+  height: 47px;
+  margin-bottom: 80px;
+  padding-left: 40px;
+  font-size: 20px;
+}
+.searchimg {
+    position: absolute;
+    left: 29%;
+    top: 54.3%;
+    transform: scale(0.8);
+}
+.hosinside{
+    margin-left: 170px;
+    margin-right: 170px;
+}
+.hosinsideimg {
+    width: 100%;
+    margin-bottom: 100px;
+}
